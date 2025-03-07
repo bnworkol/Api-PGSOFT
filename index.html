@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PGSoft Treasure Aztec Calculator</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      #form-container {
+        margin-bottom: 20px;
+      }
+      #game-container {
+        width: 100%;
+        height: 600px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+      }
+      #output {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>PGSoft Treasure Aztec Calculator</h1>
+    
+    <!-- Form for game URL and bet price -->
+    <div id="form-container">
+      <label for="game-url">Game URL:</label>
+      <input type="text" id="game-url" placeholder="Enter game URL" value="https://m.pgf-thek63.com/87/index.html?ot=CB6A749A-82C7-4D84-B5D2-0A8DFD60BCFF&btt=1&ops=2QH7KQ6NL&op=PG&l=th&f=https%3A%2F%2Fwww.p6th.com&or=20mnuncw%3Djaz-nbye63%3Dwig&__hv=2fMEYCIQC9ve26pLrl0DFq9GxIGlxkVAhay3f7mZcTryIkul%2BbvwIhAJvRFPTKpIOleleMQStxWqDhRjC5bENEwWzUT8mvZWHw" />
+      <br /><br />
+      <label for="bet-price">Bet Price:</label>
+      <input type="number" id="bet-price" min="0" step="1" placeholder="Enter bet amount" />
+      <br /><br />
+      <button id="start-program">Start Program</button>
+    </div>
+    
+    <!-- Iframe to load the game -->
+    <div id="game-container">
+      <iframe id="game-frame" src="" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+
+    <!-- Output display -->
+    <div id="output">Win Percentage: N/A</div>
+
+    <script src="../dist/index.js"></script>
+  </body>
+</html>
